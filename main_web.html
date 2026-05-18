@@ -1,0 +1,541 @@
+﻿<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Depot Air 165 - Galon Isi Ulang Bogor</title>
+<meta name="description" content="Depot Air 165 melayani isi ulang galon di Bogor. Air RO+UV, higienis, harga terjangkau, dan bisa diantar ke rumah Anda.">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main_web.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <div class="sidebar-logo">Depot Air 165</div>
+    <button class="sidebar-close" onclick="closeSidebar()">✕</button>
+  </div>
+  <a href="#produk" onclick="closeSidebar()"><span class="sidebar-icon">01</span> Produk</a>
+  <a href="#keunggulan" onclick="closeSidebar()"><span class="sidebar-icon">02</span> Keunggulan</a>
+  <a href="#proses" onclick="closeSidebar()"><span class="sidebar-icon">🔬</span> Proses</a>
+  <a href="#testimoni" onclick="closeSidebar()"><span class="sidebar-icon">💬</span> Testimoni</a>
+  <a href="#menu" onclick="closeSidebar()"><span class="sidebar-icon">🛒</span> Menu & Harga</a>
+  <a href="#kontak" onclick="closeSidebar()"><span class="sidebar-icon">📍</span> Kontak</a>
+  <div class="sidebar-divider"></div>
+  <a href="https://wa.me/628988261519?text=Halo%20Depot%20Air%20165!" target="_blank" class="sidebar-wa">Pesan WhatsApp</a>
+</div>
+
+<nav id="navbar">
+  <div class="nav-logo">
+    <div class="logo-icon">💧</div>
+    <div class="logo-text">Depot Air <span>165</span></div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#produk">Produk</a></li>
+    <li><a href="#keunggulan">Keunggulan</a></li>
+    <li><a href="#proses">Proses</a></li>
+    <li><a href="#testimoni">Testimoni</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#kontak">Kontak</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="btn-theme" onclick="toggleTheme()"></button>
+    <button class="hamburger" id="hamburger" onclick="toggleSidebar()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<section class="hero hero-parallax">
+  <div class="water-bg hero-water" aria-hidden="true">
+    <span></span><span></span><span></span>
+  </div>
+  <div class="hero-current" aria-hidden="true">
+    <span class="hero-word word-one">DEPOT AIR</span>
+    <span class="hero-word word-two">165</span>
+  </div>
+  <div class="hero-drop drop-one"></div>
+  <div class="hero-drop drop-two"></div>
+  <div class="hero-drop drop-three"></div>
+
+  <div class="hero-parallax-inner">
+    <div class="hero-copy-top">
+      <div class="hero-label"><span class="live-dot"></span> Buka Setiap Hari - 06.00-21.00</div>
+      <h1><span>Depot Air</span><strong>165</strong></h1>
+      <p class="hero-sub">Isi ulang galon RO + UV untuk keluarga Bogor. Bersih, segar, higienis, dan siap antar ke rumah.</p>
+    </div>
+    <div class="hero-gallon-wrap parallax-galon" aria-hidden="true">
+      <div class="water-gallon hero-gallon">
+        <div class="wg-cap"></div>
+        <div class="wg-neck"></div>
+        <div class="wg-body">
+          <div class="wg-water"></div>
+          <div class="wg-shine"></div>
+          <div class="wg-label"><span>Depot Air</span><strong>165</strong></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-actions">
+      <a href="#produk" class="btn-primary">Kenali Produk</a>
+      <a href="#menu" class="btn-ghost">Lihat Menu</a>
+    </div>
+  </div>
+</section>
+
+<section class="legacy-hero" hidden>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="ripple-ring"></div>
+  <div class="ripple-ring"></div>
+  <div class="ripple-ring"></div>
+
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-label"><span class="live-dot"></span> Buka Setiap Hari · 06.00–21.00</div>
+      <h1>Air Bersih & Sehat <span class="highlight">Langsung ke Rumah</span> Anda</h1>
+      <p class="hero-sub">Depot air minum isi ulang terpercaya di Bogor. Air melalui proses <strong>RO + UV Sterilisasi</strong> — murni, higienis, dan menyegarkan. Antar langsung ke rumah Anda!</p>
+      <div class="hero-badges">
+        <div class="hbadge">🧪 RO + UV</div>
+        <div class="hbadge">🚚 Antar ke Rumah</div>
+        <div class="hbadge">⚡ Isi Ulang Cepat</div>
+        <div class="hbadge">✅ Bersertifikat</div>
+      </div>
+      <div class="hero-btns">
+        <a href="#menu" class="btn-primary">🛒 Lihat Menu & Harga</a>
+        <a href="https://wa.me/628988261519" class="btn-ghost" target="_blank">💬 Chat WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="galon-card">
+        <span class="galon-emoji">🫙</span>
+        <div class="galon-card-title">Galon Isi Ulang Premium</div>
+        <div class="galon-card-price">Mulai Rp 5.000</div>
+        <div class="galon-card-tags">
+          <span class="gtag">💧 RO</span>
+          <span class="gtag">☀️ UV</span>
+          <span class="gtag green">✅ Higienis</span>
+          <span class="gtag green">🇮🇩 Bogor</span>
+        </div>
+        <div class="mini-card mc1">✅ 500+ Pelanggan</div>
+        <div class="mini-card mc2">⚡ Ready 5 Menit</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="product-stage" id="produk">
+  <div class="water-bg product-water" aria-hidden="true">
+    <span></span><span></span><span></span>
+  </div>
+  <div class="product-stage-inner">
+    <div class="product-art reveal">
+      <div class="water-gallon intro-gallon" aria-hidden="true">
+        <div class="wg-cap"></div>
+        <div class="wg-neck"></div>
+        <div class="wg-body">
+          <div class="wg-water"></div>
+          <div class="wg-shine"></div>
+          <div class="wg-label"><span>RO + UV</span><strong>19L</strong></div>
+        </div>
+      </div>
+    </div>
+    <div class="product-copy reveal">
+      <div class="sec-tag">Perkenalan Produk</div>
+      <h2>Galon isi ulang yang <span>bersih, cepat, dan segar.</span></h2>
+      <p>Depot Air 165 menyediakan isi ulang galon 19 liter dengan proses filtrasi berlapis, sterilisasi UV, dan layanan antar untuk kebutuhan rumah, kos, warung, sampai kantor.</p>
+      <div class="product-points">
+        <div class="product-point"><div class="point-icon">01</div><div><strong>RO + UV Steril</strong><span>Air diproses untuk menjaga rasa tetap ringan dan aman diminum.</span></div></div>
+        <div class="product-point"><div class="point-icon">02</div><div><strong>Isi Ulang Cepat</strong><span>Galon bersih siap dibawa pulang atau diantar tanpa menunggu lama.</span></div></div>
+        <div class="product-point"><div class="point-icon">03</div><div><strong>Harga Hemat</strong><span>Mulai Rp 5.000 di depot dan Rp 7.000 untuk layanan antar.</span></div></div>
+        <div class="product-point"><div class="point-icon">04</div><div><strong>Responsif</strong><span>Tampilan dan pemesanan dibuat nyaman untuk desktop maupun Android.</span></div></div>
+      </div>
+      <div class="product-actions">
+        <a href="#menu" class="btn-primary">Pilih Galon</a>
+        <a href="#kontak" class="btn-ghost">Lihat Lokasi</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <div class="stat-num" data-count="500">0</div>
+      <div class="stat-label">Pelanggan Aktif</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num" data-count="10">0</div>
+      <div class="stat-label">Tahun Berpengalaman</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num" data-count="99">0</div>
+      <div class="stat-label">% Kepuasan</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">24/7</div>
+      <div class="stat-label">Pelayanan Order</div>
+    </div>
+  </div>
+</div>
+
+<div id="keunggulan">
+  <div class="section">
+    <div class="section-header reveal">
+      <div class="sec-tag">✦ Kenapa Pilih Kami</div>
+      <h2>Keunggulan <span>Depot Air 165</span></h2>
+      <p>Berkomitmen memberikan air minum terbaik dengan standar kebersihan tinggi</p>
+    </div>
+    <div class="keung-grid">
+      <div class="keung-card reveal"><div class="keung-icon">🔬</div><div class="keung-title">Teknologi RO + UV</div><div class="keung-desc">Air diproses dengan Reverse Osmosis dan sterilisasi UV untuk membuang 99.9% bakteri dan kontaminan.</div></div>
+      <div class="keung-card reveal"><div class="keung-icon">⚡</div><div class="keung-title">Isi Ulang Kilat</div><div class="keung-desc">Proses isi ulang hanya 5 menit. Tidak perlu antre lama, langsung jadi dan bisa dibawa pulang.</div></div>
+      <div class="keung-card reveal"><div class="keung-icon">🚚</div><div class="keung-title">Antar ke Rumah</div><div class="keung-desc">Pesan lewat WhatsApp, galon diantar langsung ke depan pintu Anda. Tanpa ribet, tanpa antre.</div></div>
+      <div class="keung-card reveal"><div class="keung-icon">💰</div><div class="keung-title">Harga Terjangkau</div><div class="keung-desc">Isi ulang hanya Rp 5.000 di depot, Rp 7.000 untuk antar. Hemat tanpa kompromi kualitas.</div></div>
+      <div class="keung-card reveal"><div class="keung-icon">🏆</div><div class="keung-title">Bersertifikat BPOM</div><div class="keung-desc">Depot kami telah tersertifikasi dan melewati uji kelayakan air minum oleh dinas terkait.</div></div>
+      <div class="keung-card reveal"><div class="keung-icon">🕐</div><div class="keung-title">Buka Setiap Hari</div><div class="keung-desc">Kami buka setiap hari termasuk hari libur dan weekend, pukul 06.00–21.00 WIB.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="proses-bg" id="proses">
+  <div class="proses-inner">
+    <div class="section-header reveal">
+      <div class="sec-tag">✦ Proses Filtrasi</div>
+      <h2>Air Kami Diproses <span>Berlapis</span></h2>
+      <p>Standar produksi air minum depot terpercaya dengan teknologi modern</p>
+    </div>
+    <div class="proses-steps">
+      <div class="step reveal"><div class="step-num">🪣</div><div class="step-title">Penampungan Air Baku</div><div class="step-desc">Air baku dari sumber terpilih ditampung di tangki bersih tertutup.</div></div>
+      <div class="step reveal"><div class="step-num">🔩</div><div class="step-title">Filtrasi Sedimen</div><div class="step-desc">Partikel kasar dan endapan disaring dengan filter sedimen multi-layer.</div></div>
+      <div class="step reveal"><div class="step-num">🌊</div><div class="step-title">Reverse Osmosis</div><div class="step-desc">Membran RO menyaring mineral berlebih, logam berat, dan kontaminan mikro.</div></div>
+      <div class="step reveal"><div class="step-num">☀️</div><div class="step-title">Sterilisasi UV</div><div class="step-desc">Sinar ultraviolet membunuh 99.9% bakteri, virus, dan mikroorganisme berbahaya.</div></div>
+      <div class="step reveal"><div class="step-num">✅</div><div class="step-title">Siap Dikonsumsi</div><div class="step-desc">Air bersih, segar, dan aman langsung masuk ke galon bersih Anda.</div></div>
+    </div>
+  </div>
+</div>
+
+<div id="testimoni">
+  <div class="section">
+    <div class="section-header reveal">
+      <div class="sec-tag">✦ Testimoni</div>
+      <h2>Kata <span>Pelanggan Setia</span> Kami</h2>
+      <p>Kepuasan 500+ keluarga di Bogor adalah bukti nyata kami</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal"><div class="testi-stars">★★★★★</div><p class="testi-text">"Udah langganan 2 tahun, airnya beneran bersih dan segar. Antar cepat, harga tetap terjangkau. Recommended!"</p><div class="testi-user"><div class="testi-ava">R</div><div><div class="testi-name">Bu Rahma</div><div class="testi-role">Pelanggan Setia · Bogor Timur</div></div></div></div>
+      <div class="testi-card reveal"><div class="testi-stars">★★★★★</div><p class="testi-text">"Pesan lewat WA langsung diproses. Galon datang dalam 30 menit. Airnya terasa lebih segar dari depot lain!"</p><div class="testi-user"><div class="testi-ava">A</div><div><div class="testi-name">Pak Andi</div><div class="testi-role">Pelanggan · Bogor Barat</div></div></div></div>
+      <div class="testi-card reveal"><div class="testi-stars">★★★★★</div><p class="testi-text">"Saya pakai Le Minerale, bisa isi ulang di sini juga! Cuma 5 ribu, murah banget. Udah kasih tau semua tetangga."</p><div class="testi-user"><div class="testi-ava">S</div><div><div class="testi-name">Ibu Siti</div><div class="testi-role">Pelanggan · Dramaga, Bogor</div></div></div></div>
+      <div class="testi-card reveal"><div class="testi-stars">★★★★☆</div><p class="testi-text">"Punya warung, butuh galon rutin. Depot Air 165 jadi solusi yang cepat, rapi, dan pemiliknya ramah!"</p><div class="testi-user"><div class="testi-ava">D</div><div><div class="testi-name">Pak Deden</div><div class="testi-role">Pemilik Warung · Cibinong</div></div></div></div>
+      <div class="testi-card reveal"><div class="testi-stars">★★★★★</div><p class="testi-text">"Ada sertifikatnya, jadi tenang. Airnya beneran enak dan segar. Keluarga saya puas banget!"</p><div class="testi-user"><div class="testi-ava">R</div><div><div class="testi-name">Rini</div><div class="testi-role">Mahasiswi · Bogor Tengah</div></div></div></div>
+      <div class="testi-card reveal"><div class="testi-stars">★★★★★</div><p class="testi-text">"Buat kantor kami, order banyak galon diproses cepat dan diantar tepat waktu. Sangat profesional!"</p><div class="testi-user"><div class="testi-ava">F</div><div><div class="testi-name">Pak Fajar</div><div class="testi-role">Manager Kantor · Bogor Selatan</div></div></div></div>
+    </div>
+  </div>
+</div>
+
+<div id="menu" class="menu-slider-section">
+  <div class="section">
+    <div class="section-header reveal">
+      <div class="sec-tag">✦ Daftar Menu</div>
+      <h2>Pilih <span>Galon Favorit</span> Anda</h2>
+      <p>Pilih produk, atur jumlah galon, lihat total harga, lalu lanjut pesan otomatis ke WhatsApp.</p>
+    </div>
+    <div class="product-slider menu-order-slider" aria-label="Slider menu galon Depot Air 165">
+      <div class="slider-copy reveal">
+        <div class="sec-tag">Daftar Pesanan</div>
+        <h2 id="sliderTitle">Galon Aqua Isi Ulang</h2>
+        <p id="sliderDesc">Galon Aqua 19L milik Anda diisi ulang dengan air RO + UV yang bersih, segar, dan siap antar ke rumah.</p>
+        <div class="order-panel">
+          <div class="order-price">
+            <span>Harga antar / galon</span>
+            <strong id="unitPrice">Rp 7.000</strong>
+          </div>
+          <div class="quantity-box" aria-label="Jumlah pesanan">
+            <button type="button" class="qty-btn" id="qtyMinus" aria-label="Kurangi jumlah">-</button>
+            <input id="productQty" type="number" min="1" max="99" value="1" inputmode="numeric" aria-label="Jumlah galon">
+            <button type="button" class="qty-btn" id="qtyPlus" aria-label="Tambah jumlah">+</button>
+          </div>
+          <div class="order-total">
+            <span>Total</span>
+            <strong id="productTotal">Rp 7.000</strong>
+          </div>
+          <a id="productWa" href="https://wa.me/628988261519" class="btn-primary order-whatsapp" target="_blank" rel="noopener">Pesan via WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="slider-visual reveal" aria-hidden="true">
+        <div class="slider-color-block"></div>
+        <div class="product-visual active" data-slide="0" data-name="Galon Aqua Isi Ulang" data-price="7000" data-title="Galon Aqua Isi Ulang" data-desc="Galon Aqua 19L milik Anda diisi ulang dengan air RO + UV yang bersih, segar, dan siap antar ke rumah.">
+          <div class="water-gallon slider-gallon">
+            <div class="wg-cap"></div><div class="wg-neck"></div>
+            <div class="wg-body"><div class="wg-water"></div><div class="wg-shine"></div><div class="wg-label"><span>Aqua</span><strong>19L</strong></div></div>
+          </div>
+        </div>
+        <div class="product-visual" data-slide="1" data-name="Galon Le Minerale Isi Ulang" data-price="7000" data-title="Galon Le Minerale" data-desc="Isi ulang galon Le Minerale 19L dengan proses sterilisasi modern, rasa ringan, dan pengiriman cepat area Bogor.">
+          <div class="water-gallon slider-gallon">
+            <div class="wg-cap"></div><div class="wg-neck"></div>
+            <div class="wg-body"><div class="wg-water"></div><div class="wg-shine"></div><div class="wg-label"><span>Minerale</span><strong>19L</strong></div></div>
+          </div>
+        </div>
+        <div class="product-visual" data-slide="2" data-name="Galon 165 RO Premium" data-price="7000" data-title="165 RO Premium" data-desc="Pilihan isi ulang harian dari Depot Air 165 untuk rumah, kos, warung, dan kantor dengan air RO + UV higienis.">
+          <div class="water-gallon slider-gallon">
+            <div class="wg-cap"></div><div class="wg-neck"></div>
+            <div class="wg-body"><div class="wg-water"></div><div class="wg-shine"></div><div class="wg-label"><span>165</span><strong>RO</strong></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-menu reveal" role="tablist" aria-label="Pilih galon favorit">
+        <button type="button" class="slider-tab active" data-target="0" role="tab" aria-selected="true">AQUA</button>
+        <button type="button" class="slider-tab" data-target="1" role="tab" aria-selected="false">LE MINERALE</button>
+        <button type="button" class="slider-tab" data-target="2" role="tab" aria-selected="false">165 RO</button>
+      </div>
+    </div>
+    <div class="menu-grid">
+      <div class="menu-card reveal" onclick="openPopup('aqua')">
+        <div class="menu-img aqua">
+          <div class="menu-visual-shell">
+            <div class="water-gallon menu-gallon" aria-hidden="true">
+              <div class="wg-cap"></div>
+              <div class="wg-neck"></div>
+              <div class="wg-body">
+                <div class="wg-water"></div>
+                <div class="wg-shine"></div>
+                <div class="wg-label"><span>Aqua</span><strong>19L</strong></div>
+              </div>
+            </div>
+            <div class="hover-bubbles" aria-hidden="true"><span></span><span></span><span></span></div>
+          </div>
+          💧
+          <span class="menu-badge badge-blue">⭐ Terlaris</span>
+          <div class="water-wave">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg" style="width:200%;height:20px;">
+              <path d="M0,10 C30,20 70,0 100,10 C130,20 170,0 200,10 L200,20 L0,20 Z" fill="rgba(14,165,233,.2)"/>
+              <path d="M100,10 C130,20 170,0 200,10 C230,20 270,0 300,10 L300,20 L100,20 Z" fill="rgba(14,165,233,.2)"/>
+            </svg>
+          </div>
+        </div>
+        <div class="menu-body">
+          <div class="menu-brand">● AQUA</div>
+          <div class="menu-name">Galon Aqua Isi Ulang</div>
+          <div class="menu-desc">Air mineral dalam galon Aqua asli Anda. Isi ulang dengan air RO+UV berkualitas tinggi.</div>
+          <div class="menu-prices">
+            <div class="price-chip"><span class="price-label">Isi di Depot</span> <span class="price-val">Rp 5.000</span></div>
+            <div class="price-chip"><span class="price-label">Antar ke Rumah</span> <span class="price-val">Rp 7.000</span></div>
+          </div>
+          <button class="btn-detail">Lihat Detail & Pesan →</button>
+        </div>
+      </div>
+
+      <div class="menu-card reveal" onclick="openPopup('minerale')">
+        <div class="menu-img minerale">
+          <div class="menu-visual-shell">
+            <div class="water-gallon menu-gallon" aria-hidden="true">
+              <div class="wg-cap"></div>
+              <div class="wg-neck"></div>
+              <div class="wg-body">
+                <div class="wg-water"></div>
+                <div class="wg-shine"></div>
+                <div class="wg-label"><span>Minerale</span><strong>19L</strong></div>
+              </div>
+            </div>
+            <div class="hover-bubbles" aria-hidden="true"><span></span><span></span><span></span></div>
+          </div>
+          🫧
+          <span class="menu-badge badge-green">💚 Premium</span>
+          <div class="water-wave">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg" style="width:200%;height:20px;">
+              <path d="M0,10 C30,20 70,0 100,10 C130,20 170,0 200,10 L200,20 L0,20 Z" fill="rgba(34,197,94,.2)"/>
+              <path d="M100,10 C130,20 170,0 200,10 C230,20 270,0 300,10 L300,20 L100,20 Z" fill="rgba(34,197,94,.2)"/>
+            </svg>
+          </div>
+        </div>
+        <div class="menu-body">
+          <div class="menu-brand">● LE MINERALE</div>
+          <div class="menu-name">Galon Le Minerale Isi Ulang</div>
+          <div class="menu-desc">Galon Le Minerale Anda siap kami isi ulang. Air bersih dengan proses sterilisasi modern.</div>
+          <div class="menu-prices">
+            <div class="price-chip"><span class="price-label">Isi di Depot</span> <span class="price-val">Rp 5.000</span></div>
+            <div class="price-chip"><span class="price-label">Antar ke Rumah</span> <span class="price-val">Rp 7.000</span></div>
+          </div>
+          <button class="btn-detail">Lihat Detail & Pesan →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup-overlay" id="popup-aqua">
+  <div class="popup">
+    <div class="popup-header">
+      <div class="popup-icon aqua">💧</div>
+      <div class="popup-art">
+        <div class="water-gallon popup-gallon" aria-hidden="true">
+          <div class="wg-cap"></div>
+          <div class="wg-neck"></div>
+          <div class="wg-body">
+            <div class="wg-water"></div>
+            <div class="wg-shine"></div>
+            <div class="wg-label"><span>Aqua</span><strong>19L</strong></div>
+          </div>
+        </div>
+        <div class="popup-bubbles" aria-hidden="true"><span></span><span></span><span></span></div>
+      </div>
+      <div>
+        <div class="popup-brand">● AQUA</div>
+        <div class="popup-title">Galon Aqua Isi Ulang</div>
+        <div class="popup-desc">Isi ulang galon Aqua 19L dengan air RO+UV. Bersih, segar, aman untuk keluarga.</div>
+      </div>
+      <button class="popup-close" onclick="closePopup('aqua')">✕</button>
+    </div>
+    <div class="popup-body">
+      <div class="popup-detail-grid">
+        <div class="detail-chip"><div class="detail-chip-label">Volume</div><div class="detail-chip-val">19 Liter</div></div>
+        <div class="detail-chip"><div class="detail-chip-label">Galon</div><div class="detail-chip-val">Milik Sendiri</div></div>
+        <div class="detail-chip"><div class="detail-chip-label">Proses</div><div class="detail-chip-val">RO + UV</div></div>
+        <div class="detail-chip"><div class="detail-chip-label">Waktu Isi</div><div class="detail-chip-val">± 5 Menit</div></div>
+      </div>
+      <div class="popup-price-box">
+        <div class="popup-price-row"><span class="ppr-label">🏪 Isi di Depot</span><span class="ppr-val">Rp 5.000</span></div>
+        <div class="popup-price-row"><span class="ppr-label">🚚 Antar ke Rumah</span><span class="ppr-val">Rp 7.000</span></div>
+      </div>
+      <div class="popup-order-label">Cara Pesan:</div>
+      <a href="https://wa.me/628988261519?text=Halo%20Depot%20Air%20165!%20Saya%20mau%20pesan%20isi%20ulang%20galon%20AQUA.%20Tolong%20diantar%20ke%20rumah%20saya%20ya!" class="btn-order-wa" target="_blank">
+        📱 Pesan via WhatsApp Sekarang
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="popup-overlay" id="popup-minerale">
+  <div class="popup">
+    <div class="popup-header">
+      <div class="popup-icon minerale">🫧</div>
+      <div class="popup-art">
+        <div class="water-gallon popup-gallon" aria-hidden="true">
+          <div class="wg-cap"></div>
+          <div class="wg-neck"></div>
+          <div class="wg-body">
+            <div class="wg-water"></div>
+            <div class="wg-shine"></div>
+            <div class="wg-label"><span>Minerale</span><strong>19L</strong></div>
+          </div>
+        </div>
+        <div class="popup-bubbles" aria-hidden="true"><span></span><span></span><span></span></div>
+      </div>
+      <div>
+        <div class="popup-brand">● LE MINERALE</div>
+        <div class="popup-title">Galon Le Minerale Isi Ulang</div>
+        <div class="popup-desc">Isi ulang galon Le Minerale 19L dengan air minum RO+UV berkualitas tinggi.</div>
+      </div>
+      <button class="popup-close" onclick="closePopup('minerale')">✕</button>
+    </div>
+    <div class="popup-body">
+      <div class="popup-detail-grid">
+        <div class="detail-chip"><div class="detail-chip-label">Volume</div><div class="detail-chip-val">19 Liter</div></div>
+        <div class="detail-chip"><div class="detail-chip-label">Galon</div><div class="detail-chip-val">Milik Sendiri</div></div>
+        <div class="detail-chip"><div class="detail-chip-label">Proses</div><div class="detail-chip-val">RO + UV</div></div>
+        <div class="detail-chip"><div class="detail-chip-label">Waktu Isi</div><div class="detail-chip-val">± 5 Menit</div></div>
+      </div>
+      <div class="popup-price-box">
+        <div class="popup-price-row"><span class="ppr-label">🏪 Isi di Depot</span><span class="ppr-val">Rp 5.000</span></div>
+        <div class="popup-price-row"><span class="ppr-label">🚚 Antar ke Rumah</span><span class="ppr-val">Rp 7.000</span></div>
+      </div>
+      <div class="popup-order-label">Cara Pesan:</div>
+      <a href="https://wa.me/628988261519?text=Halo%20Depot%20Air%20165!%20Saya%20mau%20pesan%20isi%20ulang%20galon%20LE%20MINERALE.%20Tolong%20diantar%20ke%20rumah%20saya%20ya!" class="btn-order-wa" target="_blank">
+        📱 Pesan via WhatsApp Sekarang
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="kontak-bg" id="kontak">
+  <div class="kontak-inner">
+    <div class="kontak-grid">
+      <div class="kontak-info reveal">
+        <div class="sec-tag">✦ Hubungi Kami</div>
+        <h2>Siap Kirim Air <span>ke Rumah Anda</span></h2>
+        <p>Hubungi kami via WhatsApp atau kunjungi depot kami. Kami buka setiap hari dan siap melayani!</p>
+        <div class="kontak-list">
+          <a href="https://wa.me/628988261519" class="kontak-item" target="_blank">
+            <div class="kontak-icon">📱</div>
+            <div class="kontak-item-text"><strong>+62 898-8261-519</strong><span>Klik untuk chat WhatsApp langsung</span></div>
+          </a>
+          <div class="kontak-item">
+            <div class="kontak-icon">📍</div>
+            <div class="kontak-item-text"><strong>Jl. Malabar Ujung No.8, RT.04/RW.02</strong><span>Kel. Tegallega, Kec. Bogor Tengah, Kota Bogor, Jawa Barat 16128</span></div>
+          </div>
+          <div class="kontak-item">
+            <div class="kontak-icon">🕐</div>
+            <div class="kontak-item-text"><strong>Senin – Minggu: 06.00 – 21.00 WIB</strong><span>Termasuk hari libur nasional</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps?q=Jl.%20Malabar%20Ujung%20No.8%2C%20RT.04%2FRW.02%2C%20Kel.%20Tegallega%2C%20Kec.%20Bogor%20Tengah%2C%20Kota%20Bogor%2C%20Jawa%20Barat%2016128&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lokasi Depot Air 165"></iframe>
+        </div>
+        <button class="map-open-btn" onclick="window.open('https://maps.app.goo.gl/MDAfbYZuRyphrBdFA?g_st=iw','_blank')">
+          🗺️ Buka di Google Maps
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wa-float-wrap" id="waFloatWrap">
+  <button class="wa-close" onclick="dismissWa()" aria-label="Tutup">✕</button>
+  <a href="https://wa.me/628988261519?text=Halo%20Depot%20Air%20165!%20Saya%20mau%20pesan%20isi%20ulang%20galon." class="wa-float" target="_blank">
+    <span class="wa-float-icon">💬</span>
+    <span class="wa-text">Pesan via WhatsApp</span>
+  </a>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">Depot Air 165</div>
+      <p class="footer-desc">Depot air minum isi ulang terpercaya di Bogor. Air proses RO+UV, harga terjangkau, dan bisa antar ke rumah Anda. Melayani sejak 2015.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="#menu">Galon Aqua Isi Ulang</a></li>
+        <li><a href="#menu">Galon Le Minerale Isi Ulang</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Informasi</h4>
+      <ul>
+        <li><a href="#keunggulan">Keunggulan</a></li>
+        <li><a href="#proses">Proses Filtrasi</a></li>
+        <li><a href="#testimoni">Testimoni</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Kontak</h4>
+      <ul>
+        <li><a href="#">📱 +62 898-8261-519</a></li>
+        <li><a href="https://maps.app.goo.gl/MDAfbYZuRyphrBdFA?g_st=iw" target="_blank">📍 Jl. Malabar Ujung No.8, RT.04/RW.02</a></li>
+        <li><a href="#">🕐 06.00 – 21.00 WIB</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Depot Air 165 Bogor. All rights reserved.</span>
+    <a href="credit.html" class="footer-credit" target="_blank" rel="noopener">Credit: Mahasiswa TPL Kelompok 4</a>
+    <div class="footer-badges">
+      <span class="fbadge">✅ RO Certified</span>
+      <span class="fbadge">🏥 UV Steril</span>
+      <span class="fbadge">📋 BPOM</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main_web.js"></script>
+</body>
+</html>

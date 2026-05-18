@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Credit | Depot Air 165</title>
+<meta name="description" content="Halaman credit Depot Air 165 dengan dokumentasi foto Kelompok 4.">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/credit.css">
+</head>
+<body>
+<nav>
+  <a href="main_web.html" class="nav-logo">
+    <div class="logo-icon">💧</div>
+    <div class="logo-text">Depot Air <span>165</span></div>
+  </a>
+  <div class="nav-right">
+    <button class="btn-theme" onclick="toggleTheme()" aria-label="Toggle theme"></button>
+    <a href="main_web.html" class="btn-ghost">← Kembali ke Home</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="hero-inner">
+    <div class="hero-label">✦ Credit Page</div>
+    <h1>Dokumentasi <span class="highlight">Kelompok</span></h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-header">
+    <div class="sec-tag">✦ Galeri</div>
+    <h2>Foto <span>Dokumentasi</span></h2>
+    <p>Foto dokumentasi bersama client</p>
+  </div>
+  <div class="gallery-grid">
+    <article class="photo-card">
+      <button class="photo-trigger" type="button" data-image="images/foto1.jpeg" data-alt="Foto dokumentasi pertama Kelompok 4" data-title="Dokumentasi Bersama Client 01">
+        <div class="photo-frame">
+          <img src="images/foto1.jpeg" alt="Foto dokumentasi pertama Kelompok 4">
+        </div>
+        <div class="photo-body">
+          <h3>Dokumentasi 01</h3>
+          <p>Foto dokumentasi bersama client pada sesi pengambilan kebutuhan proyek.</p>
+          <p class="photo-hint">Klik foto untuk melihat daftar anggota Kelompok 4.</p>
+        </div>
+      </button>
+    </article>
+    <article class="photo-card">
+      <button class="photo-trigger" type="button" data-image="images/foto2.jpeg" data-alt="Foto dokumentasi kedua Kelompok 4" data-title="Dokumentasi Bersama Client 02">
+        <div class="photo-frame">
+          <img src="images/foto2.jpeg" alt="Foto dokumentasi kedua Kelompok 4">
+        </div>
+        <div class="photo-body">
+          <h3>Dokumentasi 02</h3>
+          <p>Foto dokumentasi lanjutan sebagai bagian dari pengerjaan website Depot Air 165.</p>
+          <p class="photo-hint">Klik foto untuk melihat daftar anggota Kelompok 4.</p>
+        </div>
+      </button>
+    </article>
+  </div>
+</section>
+
+<div class="member-popup-overlay" id="memberPopup" aria-hidden="true">
+  <div class="member-popup" role="dialog" aria-modal="true" aria-labelledby="memberPopupTitle">
+    <div class="member-popup-media">
+      <img id="memberPopupImage" src="images/foto1.jpeg" alt="Foto dokumentasi Kelompok 4">
+    </div>
+    <div class="member-popup-body">
+      <button class="member-popup-close" type="button" onclick="closeMemberPopup()" aria-label="Tutup popup">x</button>
+      <div class="sec-tag">Kelompok 4</div>
+      <h3 id="memberPopupTitle">Daftar Anggota Mahasiswa</h3>
+      <p class="member-popup-copy">Setiap foto dokumentasi sekarang dapat diklik untuk menampilkan daftar anggota Kelompok 4 berikut.</p>
+      <ul class="member-list">
+        <li class="member-item"><span class="member-name">Misael Christopher Haryanto</span><span class="member-id">J0403251052</span></li>
+        <li class="member-item"><span class="member-name">Fardhan Al Biansya</span><span class="member-id">J0403251060</span></li>
+        <li class="member-item"><span class="member-name">Novia Siti Zahra</span><span class="member-id">J0403251059</span></li>
+        <li class="member-item"><span class="member-name">Ryanza Faraz Mulia</span><span class="member-id">J0403251064</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-bottom">
+    <span>© 2026 Depot Air 165 Bogor. All rights reserved.</span>
+    <span class="footer-credit">Credit: Mahasiswa TPL Kelompok 4</span>
+  </div>
+</footer>
+
+<script src="assets/js/credit.js"></script>
+</body>
+</html>
